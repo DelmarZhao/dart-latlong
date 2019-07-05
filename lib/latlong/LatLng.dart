@@ -36,10 +36,14 @@ class LatLng {
 
     LatLng(this._latitude, this._longitude);
 
-    void set latitude(final double value);
+    void set latitude(final double value){
+      _latitude = value;
+    }
     double get latitude => _latitude;
 
-    void set longitude(final double value);
+    void set longitude(final double value){
+      _longitude = value;
+    }
     double get longitude => _longitude;
 
     double get latitudeInRad => degToRadian(latitude);
